@@ -669,3 +669,15 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDeMJW8ksBU2blGr1iB3yJAdh82hLT4z4kEiYudLfaL
 [  953.026981] rcu_sched kthread starved for 73260 jiffies! g4771 c4770 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=0
 [  953.040722] systemd[1]: systemd-udevd.service: Watchdog timeout (limit 3min)!
 [  953.060688] systemd[1]: systemd-logind.service: Watchdog timeout (limit 3min)!
+[32448.658993] INFO: rcu_sched self-detected stall on CPU
+[32448.664262] INFO: rcu_sched detected stalls on CPUs/tasks:
+[32448.664289] 	1-...!: (3 ticks this GP) idle=c72/140000000000001/0 softirq=49009/49011 fqs=1 
+[32448.664292] 	(detected by 0, t=298980 jiffies, g=27957, c=27956, q=30)
+[32448.979280] rcu_sched kthread starved for 298978 jiffies! g27957 c27956 f0x0 RCU_GP_WAIT_FQS(3) ->state=0x402 ->cpu=0
+[32448.983684] INFO: rcu_sched detected stalls on CPUs/tasks:
+[32448.983714] 	1-...!: (3 ticks this GP) idle=c72/140000000000001/0 softirq=49009/49011 fqs=1 
+[32448.983717] 	(detected by 0, t=3597596 jiffies, g=27957, c=27956, q=39)
+[32448.986223] rcu_sched kthread starved for 3597594 jiffies! g27957 c27956 f0x2 RCU_GP_WAIT_FQS(3) ->state=0x0 ->cpu=0
+[32450.478706] 	1-...0: (3 ticks this GP) idle=c72/140000000000001/0 softirq=49009/49011 fqs=2 
+[32450.723874] 	 (t=3597596 jiffies g=27957 c=27956 q=370)
+[71805.221271] systemd[1]: systemd-logind.service: Watchdog timeout (limit 3min)!
